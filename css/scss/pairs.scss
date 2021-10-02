@@ -1,0 +1,281 @@
+@import 'common';
+@import 'colors';
+/*pairs-top*/
+.pairs-top {
+    .pt-left {
+        span {
+            &.title {
+                color: $color-white;
+                font-size: 28px;
+                text-transform: uppercase;
+                margin-left: 95px;
+                padding-right: 10px;
+                vertical-align: middle;
+
+                @include ScreenMaxWidth(XXS) {
+                    font-size: 23px;
+                }
+            }
+        }
+
+        .couple-icon {
+            .icon-1 {
+                top: -13px;
+            }
+
+            .icon-2 {
+                left: 39px;
+                top: -13px;
+            }
+        }
+    }
+
+    .pt-right {
+        text-align: right;
+
+        .btn-share, .btn-star {
+            background-color: $bg-btn-share;
+            border-color: $bg-btn-share;
+            color: $color-white;
+            margin-right: 8px;
+            padding: 3px 10px 3px 10px;
+        }
+
+        .btn-trade {
+            background-color: $bg-btn-trade;
+            border-color: $bg-btn-trade;
+            color: $color-white;
+            padding: 3px 14px 3px 14px;
+        }
+    }
+}
+
+/*pairs-volume*/
+.pairs-volume {
+    .pv-box {
+        background-color: $bg-pv-box;
+        border-radius: 15px;
+        color: $color-white;
+        padding: 20px;
+
+        .volume-value {
+            font-size: 26px;
+        }
+
+        @include ScreenMaxWidth(SM) {
+            margin-top: 15px;
+        }
+    }
+}
+
+/*pairs-pool*/
+.pairs-pool {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    color: $color-white;
+    background-color: $bg-pairs-pool;
+    padding: 20px;
+
+    .pp-pooled {
+        display: inline-flex;
+        width: 24%;
+
+        .icon-thumb {
+            padding-top: 7px;
+            float: left;
+        }
+
+        .pool-info {
+            padding-left: 20px;
+            float: left;
+
+            .value {
+                font-size: 26px;
+            }
+        }
+
+        &.trust-votes {
+            .progress {
+                border-radius: 10px;
+                height: 7px;
+                width: 100%;
+                float: left;
+                margin: 5px 0px 5px 0px;
+            }
+        }
+
+        @include ScreenMaxWidth(XXL) {
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-bottom: 15px;
+        }
+
+        @include ScreenMaxWidth(SM) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .dext-score {
+        width: 24%;
+
+        .pool-info {
+            .value {
+                color: $color-pool-info-value;
+            }
+        }
+    }
+
+    .trust-votes {
+        display: block;
+        text-align: center;
+        width: 28%;
+        .progress {
+            .progress-up {
+                background-color: $bg-progress-up;
+                height: 100%;
+                float: left;
+            }
+
+            .progress-down {
+                background-color: $bg-progress-down;
+                height: 100%;
+                float: left;
+            }
+        }
+
+        .thumbs {
+            .thumbs-up {
+                float: left;
+            }
+
+            .thumbs-down {
+                float: right;
+            }
+        }
+    }
+}
+
+/*tab-button*/
+.pairs-tab {
+    a {
+        border: 1px solid $color-pairs-tab;
+        border-radius: 25px;
+        color: $color-pairs-tab;
+        padding-left: 15px;
+        margin-left: 10px;
+
+        &.active {
+            border: hidden;
+            background-color: $color-pairs-tab;
+            background-image: linear-gradient(326deg, $color-pairs-tab 0%, #d755fa 74%);
+            color: $color-white;
+        }
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    span {
+        padding-left: 15px;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+}
+
+/*table-pagination*/
+.tb-pagination {
+    &.pagination {
+        float: right;
+        padding-top: 15px;
+
+        li {
+            padding-right: 10px;
+
+            a {
+                background-color: $bg-pagination-item;
+                border: 1px solid $bg-pagination-item;
+                border-radius: 3px;
+                color: color-pagination-item;
+                display: block;
+                padding: 5px 10px;
+                position: relative;
+                margin-left: -1px;
+                line-height: 1.25;
+            }
+
+            &.disabled {
+                a {
+                    color: $color-white;
+                    background-color: $bg-pagination-item-disable;
+                    border: 1px solid $bg-pagination-item-disable;
+                }
+            }
+        }
+    }
+}
+
+/*tab-table*/
+.tab-table {
+    .table-container {
+        .tr {
+            &:nth-of-type(even) {
+                background-color: $bg-tr-even;
+            }
+
+            &:nth-of-type(odd) {
+                background-color: $bg-tr-odd;
+            }
+        }
+
+        .thead {
+            .tr {
+                .td {
+                    color: $color-tab-table-td;
+                }
+            }
+        }
+
+        .td-date {
+            justify-content: flex-start;
+            flex: 0 0 20%;
+        }
+
+        .td-maker {
+            justify-content: space-around;
+            flex: 0 0 20%;
+        }
+
+        .td-buy-type {
+            justify-content: space-around;
+        }
+
+        .td-money {
+            justify-content: flex-end;
+            flex: 0 0 12%;
+        }
+
+        .td-action {
+            justify-content: space-around;
+        }
+
+        .td-action {
+            color: $color-td-action;
+            text-align: center;
+        }
+
+        @include ScreenMaxWidth(XL) {
+            width: 1200px;
+        }
+
+        @include ScreenMaxWidth(SM) {
+            width: XL;
+        }
+    }
+
+    @include ScreenMaxWidth(XL) {
+        width: XL;
+        overflow-x: scroll;
+    }
+}

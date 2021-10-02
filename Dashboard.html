@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/libs/simple-sidebar.css">
+    <link rel="stylesheet" type="text/css" href="css/scss/style.css">
+    <link rel="stylesheet" type="text/css" href="css/scss/dashboard.css">
+</head>
+<body>
+    <main class="container">
+        <div class="header row">
+            <div class="col-md-4">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/icons/DinoIcon.PNG">
+                        <span>DinoExchange</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="search-form input-group">
+                    <input class="form-control py-2 rounded-pill mr-1 pr-5" type="search" id="example-search-input" placeholder="Looking for something">
+                    <span class="input-group-append">
+                        <button class="btn rounded-pill border-0 ml-n5" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="content row">
+            <div class="col-lg-12">
+                <div class="d-flex" id="wrapper">
+                    <div id="sidebar-wrapper">
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action active">
+                                <img src="images/icons/DashActive.PNG">
+                                <span>Dashboard</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <img src="images/icons/TokenIcon.PNG">
+                                <span>Tokens</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <img src="images/icons/PairsNonActive.PNG">
+                                <span>Pairs</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="wapper-content" class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <button class="btn" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                        <!--box-home-->
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="box-home">
+                                    <div class="bh-left">
+                                        <div><span class="title">Liquidity</span></div>
+                                        <div><span class="value">$5,502,018381</span></div>
+                                        <div><span class="date">May 04, 21</span></div>
+                                    </div>
+                                    <div class="bh-right">
+                                        <span>1W</span>
+                                        <span>1M</span>
+                                        <span>ALL</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="box-home">
+                                    <div class="bh-left">
+                                        <div><span class="title">Volume</span></div>
+                                        <div><span class="value">$5,502,018381</span></div>
+                                        <div><span class="date">May 04, 21</span></div>
+                                    </div>
+                                    <div class="bh-right">
+                                        <span>1W</span>
+                                        <span>1M</span>
+                                        <span>ALL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end-->
+
+                        <!--top-dino-table-->
+                        <div class="row">
+                            <h4 class="col-md-4">Top DINO Liquidity Pairs</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="top-table scroll-horizontal">
+                                    <div class="table-container">
+                                        <div class="thead">
+                                            <div class="tr th">
+                                                <div class="td td-name">Name</div>
+                                                <div class="td td-reward">Reward per $1000</div>
+                                                <div class="td td-daily">Yearly/ Monthly/ Daily ROI</div>
+                                                <div class="td td-rerserve">Base Rerserve</div>
+                                                <div class="td td-rerserve">Quote Rerserve</div>
+                                                <div class="td td-tvl">
+                                                    TVL
+                                                    &nbsp;&nbsp;<a href="#"><i class="fa fa-caret-down"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tbody">
+                                            <div class="tr">
+                                                <div class="td td-name">
+                                                    <span class="couple-icon">
+                                                        <img class="icon-1" src="images/icons/DinoPool.PNG" width="40px;" height="40px;" />
+                                                        <img class="icon-2" src="images/icons/BusdPool.PNG" width="40px;" height="40px;" />
+                                                    </span>
+                                                    <span class="name">Dino-USDT</span>
+                                                </div>
+                                                <div class="td td-reward">0.03 DINO per day</div>
+                                                <div class="td td-daily">
+                                                    <span class="up">14.16%</span>/&nbsp;<span>1.18%</span>/&nbsp;<span>0.04%</span>
+                                                </div>
+                                                <div class="td td-rerserve">
+                                                    <span class="image-icon">
+                                                        <img src="images/icons/BNB.PNG" width="30px;" height="30px;" />
+                                                    </span>
+                                                    <span>7,3028 ETH</span>
+                                                </div>
+                                                <div class="td td-rerserve">
+                                                    <span class="image-icon">
+                                                        <img src="images/icons/BNB.PNG" width="30px;" height="30px;" />
+                                                    </span>
+                                                    <span>143,700 WETH</span>
+                                                </div>
+                                                <div class="td td-tvl">
+                                                    <span>$910,038,483.30</span>
+                                                </div>
+                                            </div>
+                                            <div class="tr">
+                                                <div class="td td-name">
+                                                    <span class="couple-icon">
+                                                        <img class="icon-1" src="images/icons/DinoPool.PNG" width="40px;" height="40px;" />
+                                                        <img class="icon-2" src="images/icons/BusdPool.PNG" width="40px;" height="40px;" />
+                                                    </span>
+                                                    <span class="name">Dino-USDT</span>
+                                                </div>
+                                                <div class="td td-reward">0.03 DINO per day</div>
+                                                <div class="td td-daily">
+                                                    <span class="up">14.16%</span>/&nbsp;
+                                                    <span>1.18%</span>/&nbsp;
+                                                    <span>0.04%</span>
+                                                </div>
+                                                <div class="td td-rerserve">
+                                                    <span class="image-icon">
+                                                        <img src="images/icons/BNB.PNG" width="30px;" height="30px;" />
+                                                    </span>
+                                                    <span>7,3028 ETH</span>
+                                                </div>
+                                                <div class="td td-rerserve">
+                                                    <span class="image-icon">
+                                                        <img src="images/icons/BNB.PNG" width="30px;" height="30px;" />
+                                                    </span>
+                                                    <span>143,700 WETH</span>
+                                                </div>
+                                                <div class="td td-tvl">
+                                                    <span>$910,038,483.30</span>
+                                                </div>
+                                            </div>
+                                            <div class="tr">
+                                                <div class="td td-name">
+                                                    <span class="couple-icon">
+                                                        <img class="icon-1" src="images/icons/DinoPool.PNG" width="40px;" height="40px;" />
+                                                        <img class="icon-2" src="images/icons/BusdPool.PNG" width="40px;" height="40px;" />
+                                                    </span>
+                                                    <span class="name">Dino-USDT</span>
+                                                </div>
+                                                <div class="td td-reward">0.03 DINO per day</div>
+                                                <div class="td td-daily">
+                                                    <span class="up">14.16%</span>/&nbsp;<span>1.18%</span>/&nbsp;<span>0.04%</span>
+                                                </div>
+                                                <div class="td td-rerserve">
+                                                    <span class="image-icon">
+                                                        <img src="images/icons/BNB.PNG" width="30px;" height="30px;" />
+                                                    </span>
+                                                    <span>7,3028 ETH</span>
+                                                </div>
+                                                <div class="td td-rerserve">
+                                                    <span class="image-icon">
+                                                        <img src="images/icons/BNB.PNG" width="30px;" height="30px;" />
+                                                    </span>
+                                                    <span>143,700 WETH</span>
+                                                </div>
+                                                <div class="td td-tvl">
+                                                    <span>$910,038,483.30</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end-->
+
+                        <!--top-token-->
+                        <div class="row">
+                            <h4 class="col-md-4">Top Token</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="top-table scroll-horizontal">
+                                    <div class="table-container">
+                                        <div class="thead">
+                                            <div class="tr th">
+                                                <div class="td td-name">Name</div>
+                                                <div class="td td-reward">Reward per $1000</div>
+                                                <div class="td td-daily">Yearly/ Monthly/ Daily ROI</div>
+                                                <div class="td td-rerserve">Base Rerserve</div>
+                                                <div class="td td-rerserve">Quote Rerserve</div>
+                                                <div class="td td-tvl">
+                                                    TVL
+                                                    &nbsp;&nbsp;<a href="#"><i class="fa fa-caret-down"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tbody">
+                                            <div class="tr">
+                                                <div class="td td-name">
+                                                    <span class="couple-icon">
+                                                        <img class="icon-1" src="images/icons/DinoPool.PNG" width="40px;" height="40px;" />
+                                                        <img class="icon-2" src="images/icons/BusdPool.PNG" width="40px;" height="40px;" />
+                                                    </span>
+                                                    <span class="name">Dino-USDT</span>
+                                                </div>
+                                                <div class="td td-reward">0.03 DINO per day</div>
+                                                <div class="td td-daily">
+                                                    <span class="up">14.16%</span>/&nbsp;<span>1.18%</span>/&nbsp;<span>0.04%</span>
+                                                </div>
+                                                <div class="td td-rerserve">
+                                                    <span class="image-icon">
+                                                        <img src="images/icons/BNB.PNG" width="30px;" height="30px;" />
+                                                    </span>
+                                                    <span>7,3028 ETH</span>
+                                                </div>
+                                                <div class="td td-rerserve">
+                                                    <span class="image-icon">
+                                                        <img src="images/icons/BNB.PNG" width="30px;" height="30px;" />
+                                                    </span>
+                                                    <span>143,700 WETH</span>
+                                                </div>
+                                                <div class="td td-tvl">
+                                                    <span>$910,038,483.30</span>
+                                                </div>
+                                            </div>
+                                            <div class="tr">
+                                                <div class="td td-name">
+                                                    <span class="couple-icon">
+                                                        <img class="icon-1" src="images/icons/DinoPool.PNG" width="40px;" height="40px;" />
+                                                        <img class="icon-2" src="images/icons/BusdPool.PNG" width="40px;" height="40px;" />
+                                                    </span>
+                                                    <span class="name">Dino-USDT</span>
+                                                </div>
+                                                <div class="td td-reward">0.03 DINO per day</div>
+                                                <div class="td td-daily">
+                                                    <span class="up">14.16%</span>/&nbsp;
+                                                    <span>1.18%</span>/&nbsp;
+                                                    <span>0.04%</span>
+                                                </div>
+                                                <div class="td td-rerserve">
+                                                    <span class="image-icon">
+                                                        <img src="images/icons/BNB.PNG" width="30px;" height="30px;" />
+                                                    </span>
+                                                    <span>7,3028 ETH</span>
+                                                </div>
+                                                <div class="td td-rerserve">
+                                                    <span class="image-icon">
+                                                        <img src="images/icons/BNB.PNG" width="30px;" height="30px;" />
+                                                    </span>
+                                                    <span>143,700 WETH</span>
+                                                </div>
+                                                <div class="td td-tvl">
+                                                    <span>$910,038,483.30</span>
+                                                </div>
+                                            </div>
+                                            <div class="tr">
+                                                <div class="td td-name">
+                                                    <span class="couple-icon">
+                                                        <img class="icon-1" src="images/icons/DinoPool.PNG" width="40px;" height="40px;" />
+                                                        <img class="icon-2" src="images/icons/BusdPool.PNG" width="40px;" height="40px;" />
+                                                    </span>
+                                                    <span class="name">Dino-USDT</span>
+                                                </div>
+                                                <div class="td td-reward">0.03 DINO per day</div>
+                                                <div class="td td-daily">
+                                                    <span class="up">14.16%</span>/&nbsp;<span>1.18%</span>/&nbsp;<span>0.04%</span>
+                                                </div>
+                                                <div class="td td-rerserve">
+                                                    <span class="image-icon">
+                                                        <img src="images/icons/BNB.PNG" width="30px;" height="30px;" />
+                                                    </span>
+                                                    <span>7,3028 ETH</span>
+                                                </div>
+                                                <div class="td td-rerserve">
+                                                    <span class="image-icon">
+                                                        <img src="images/icons/BNB.PNG" width="30px;" height="30px;" />
+                                                    </span>
+                                                    <span>143,700 WETH</span>
+                                                </div>
+                                                <div class="td td-tvl">
+                                                    <span>$910,038,483.30</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end-->
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div style="height: 100px; border: 1px solid"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Back to top button -->
+    <a id="btn-back-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

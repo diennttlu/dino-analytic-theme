@@ -1,0 +1,489 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pairs</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/libs/simple-sidebar.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+    <link rel="stylesheet" type="text/css" href="css/scss/style.css">
+    <link rel="stylesheet" type="text/css" href="css/scss/pairs.css">
+
+</head>
+<body>
+    <main class="container">
+        <div class="header row">
+            <div class="col-md-4">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/icons/DinoIcon.PNG">
+                        <span>DinoExchange</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="search-form input-group">
+                    <input class="form-control py-2 rounded-pill mr-1 pr-5" type="search" id="example-search-input" placeholder="Looking for something">
+                    <span class="input-group-append">
+                        <button class="btn rounded-pill border-0 ml-n5" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="content row">
+            <div class="col-lg-12">
+                <div class="d-flex" id="wrapper">
+                    <!--left-menu-->
+                    <div id="sidebar-wrapper">
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <img src="images/icons/DashIcon.PNG">
+                                <span>Dashboard</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <img src="images/icons/TokenIcon.PNG">
+                                <span>Tokens</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action active">
+                                <img src="images/icons/PairsIcon.PNG">
+                                <span>Pairs</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end-->
+
+                    <div id="wapper-content" class="container-fluid">
+                        <!--menu-button-->
+                        <div class="row">
+                            <div class="col-md-1">
+                                <button class="btn" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                        <!--end-->
+                        <!--pairs-top-->
+                        <div class="row pairs-top">
+                            <div class="col-md-6 pt-left">
+                                <span class="couple-icon">
+                                    <img class="icon-1" src="images/icons/DinoPool.PNG" width="45px" height="45px" />
+                                    <img class="icon-2" src="images/icons/BusdPool.PNG" width="45px" height="45px" />
+                                </span>
+                                <span class="title">dino-busd</span>
+                                <img src="images/icons/icon.PNG" />
+                                <img src="images/icons/icon.PNG" />
+                                <img src="images/icons/icon.PNG" />
+                                <img src="images/icons/icon.PNG" />
+                            </div>
+                            <div class="col-md-6 pt-right">
+                                <button class="btn btn-share"><i class="fa fa-share-alt"></i></button>
+                                <button class="btn btn-star"><i class="fa fa-star"></i></button>
+                                <button class="btn btn-trade">Trade</button>
+                            </div>
+                        </div>
+                        <!--end-->
+                        <!-- pairs-volume -->
+                        <div class="row pairs-volume">
+                            <div class="col-md-4">
+                                <div class="pv-box">
+                                    <div class="volume-title">Total Liquidity</div>
+                                    <div class="volume-value">94,248,711</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="pv-box">
+                                    <div class="volume-title">Volume (24hrs)</div>
+                                    <div class="volume-value">94,248,711</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="pv-box">
+                                    <div class="volume-title">Volume (7d)</div>
+                                    <div class="volume-value">94,248,711</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- pairs-pool -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="pairs-pool">
+                                    <div class="pp-pooled">
+                                        <div class="icon-thumb"><img src="images/icons/DinoPool.PNG" /></div>
+                                        <div class="pool-info">
+                                            <div class="title">Pooled DINO</div>
+                                            <div class="value">15,159,829</div>
+                                        </div>
+                                    </div>
+                                    <div class="pp-pooled">
+                                        <div class="icon-thumb"><img src="images/icons/BusdPool.PNG" /></div>
+                                        <div class="pool-info">
+                                            <div class="title">Pooled BUSD</div>
+                                            <div class="value">15,159,829</div>
+                                        </div>
+                                    </div>
+                                    <div class="pp-pooled dext-score">
+                                        <div class="icon-thumb"><img src="images/icons/DextScore.PNG" /></div>
+                                        <div class="pool-info">
+                                            <div class="title">DEXT SCORE</div>
+                                            <div class="value">100.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="pp-pooled trust-votes">
+                                        <div class="title"><span>Community trust (14 votes)</span></div>
+                                        <div class="progress">
+                                            <div class="progress-up" style="width: 70%;"></div>
+                                            <div class="progress-down" style="width: 30%;"></div>
+                                        </div>
+                                        <div class="thumbs">
+                                            <span class="thumbs-up"><i class="fa fa-thumbs-up">&nbsp;70%</i></span>
+                                            <span class="thumbs-down"><i class="fa fa-thumbs-down">&nbsp;30%</i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end-->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div style="width: 100%; height: 500px; border: 1px solid;">
+                                    <h1>Biểu đồ</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- trade history tab, my position tab -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="nav nav-pills pairs-tab" role="tablist">
+                                            <a class="btn active" data-toggle="pill" href="#trade-history-tab" role="tab" aria-selected="true">Trade History</a>
+                                            <a class="btn" data-toggle="pill" href="#my-positions-tab" role="tab" aria-selected="false">My Positions</a>
+                                            <span>DINO (last 421 trades) <i class="fa fa-filter"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="trade-history-tab" role="tabpanel" aria-labelledby="pills-home-tab">
+                                                <!--trade-history-table-->
+                                                <div class="tab-table scroll-horizontal tb-trade-history">
+                                                    <div class="table-container">
+                                                        <div class="thead">
+                                                            <div class="tr th">
+                                                                <div class="td td-date">DATE</div>
+                                                                <div class="td td-buy-type">TYPE</div>
+                                                                <div class="td td-money">PRICE (USD)</div>
+                                                                <div class="td td-money">AMOUNT</div>
+                                                                <div class="td td-money">TOTAL</div>
+                                                                <div class="td td-maker">MAKER</div>
+                                                                <div class="td td-action"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tbody">
+                                                            <div class="tr">
+                                                                <div class="td td-date">
+                                                                    <span>13 secs ago</span>
+                                                                </div>
+                                                                <div class="td td-buy-type buy">
+                                                                    <span>BUY</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>0.22639097</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.4211597</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.417362</span>
+                                                                </div>
+                                                                <div class="td td-maker">
+                                                                    <span>0x9b38...c950b7</span>
+                                                                </div>
+                                                                <div class="td td-action">
+                                                                    <i class="fas fa-share"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tr">
+                                                                <div class="td td-date">
+                                                                    <span>13 secs ago</span>
+                                                                </div>
+                                                                <div class="td td-buy-type sell">
+                                                                    <span>BUY</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>0.22639097</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.4211597</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.417362</span>
+                                                                </div>
+                                                                <div class="td td-maker">
+                                                                    <span>0x9b38...c950b7</span>
+                                                                </div>
+                                                                <div class="td td-action">
+                                                                    <i class="fas fa-share"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tr">
+                                                                <div class="td td-date">
+                                                                    <span>13 secs ago</span>
+                                                                </div>
+                                                                <div class="td td-buy-type buy">
+                                                                    <span>BUY</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>0.22639097</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.4211597</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.417362</span>
+                                                                </div>
+                                                                <div class="td td-maker">
+                                                                    <span>0x9b38...c950b7</span>
+                                                                </div>
+                                                                <div class="td td-action">
+                                                                    <i class="fas fa-share"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tr">
+                                                                <div class="td td-date">
+                                                                    <span>13 secs ago</span>
+                                                                </div>
+                                                                <div class="td td-buy-type sell">
+                                                                    <span>BUY</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>0.22639097</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.4211597</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.417362</span>
+                                                                </div>
+                                                                <div class="td td-maker">
+                                                                    <span>0x9b38...c950b7</span>
+                                                                </div>
+                                                                <div class="td td-action">
+                                                                    <i class="fas fa-share"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tr">
+                                                                <div class="td td-date">
+                                                                    <span>13 secs ago</span>
+                                                                </div>
+                                                                <div class="td td-buy-type buy">
+                                                                    <span>BUY</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>0.22639097</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.4211597</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.417362</span>
+                                                                </div>
+                                                                <div class="td td-maker">
+                                                                    <span>0x9b38...c950b7</span>
+                                                                </div>
+                                                                <div class="td td-action">
+                                                                    <i class="fas fa-share"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--pagination-->
+                                                <ul class="tb-pagination pagination">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link" href="#" tabindex="-1">1</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                </ul>
+                                                <!--end-->
+                                            </div>
+                                            <div class="tab-pane fade" id="my-positions-tab" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                                <!--my-positions-table-->
+                                                <div class="tab-table scroll-horizontal tb-trade-history">
+                                                    <div class="table-container">
+                                                        <div class="thead">
+                                                            <div class="tr th">
+                                                                <div class="td td-date">DATE</div>
+                                                                <div class="td td-buy-type">TYPE</div>
+                                                                <div class="td td-money">PRICE (USD)</div>
+                                                                <div class="td td-money">AMOUNT</div>
+                                                                <div class="td td-money">TOTAL</div>
+                                                                <div class="td td-maker">MAKER</div>
+                                                                <div class="td td-action"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tbody">
+                                                            <div class="tr">
+                                                                <div class="td td-date">
+                                                                    <span>13 secs ago</span>
+                                                                </div>
+                                                                <div class="td td-buy-type buy">
+                                                                    <span>BUY</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>0.22639097</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.4211597</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.417362</span>
+                                                                </div>
+                                                                <div class="td td-maker">
+                                                                    <span>0x9b38...c950b7</span>
+                                                                </div>
+                                                                <div class="td td-action">
+                                                                    <i class="fas fa-share"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tr">
+                                                                <div class="td td-date">
+                                                                    <span>13 secs ago</span>
+                                                                </div>
+                                                                <div class="td td-buy-type sell">
+                                                                    <span>BUY</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>0.22639097</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.4211597</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.417362</span>
+                                                                </div>
+                                                                <div class="td td-maker">
+                                                                    <span>0x9b38...c950b7</span>
+                                                                </div>
+                                                                <div class="td td-action">
+                                                                    <i class="fas fa-share"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tr">
+                                                                <div class="td td-date">
+                                                                    <span>13 secs ago</span>
+                                                                </div>
+                                                                <div class="td td-buy-type buy">
+                                                                    <span>BUY</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>0.22639097</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.4211597</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.417362</span>
+                                                                </div>
+                                                                <div class="td td-maker">
+                                                                    <span>0x9b38...c950b7</span>
+                                                                </div>
+                                                                <div class="td td-action">
+                                                                    <i class="fas fa-share"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tr">
+                                                                <div class="td td-date">
+                                                                    <span>13 secs ago</span>
+                                                                </div>
+                                                                <div class="td td-buy-type sell">
+                                                                    <span>BUY</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>0.22639097</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.4211597</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.417362</span>
+                                                                </div>
+                                                                <div class="td td-maker">
+                                                                    <span>0x9b38...c950b7</span>
+                                                                </div>
+                                                                <div class="td td-action">
+                                                                    <i class="fas fa-share"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tr">
+                                                                <div class="td td-date">
+                                                                    <span>13 secs ago</span>
+                                                                </div>
+                                                                <div class="td td-buy-type buy">
+                                                                    <span>BUY</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>0.22639097</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.4211597</span>
+                                                                </div>
+                                                                <div class="td td-money">
+                                                                    <span>4.417362</span>
+                                                                </div>
+                                                                <div class="td td-maker">
+                                                                    <span>0x9b38...c950b7</span>
+                                                                </div>
+                                                                <div class="td td-action">
+                                                                    <i class="fas fa-share"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--pagination-->
+                                                <ul class="tb-pagination pagination">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link" href="#" tabindex="-1">1</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                </ul>
+                                                <!--end-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Back to top button -->
+    <a id="btn-back-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

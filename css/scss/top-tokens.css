@@ -1,0 +1,50 @@
+/*background-attr*/
+/*color-attr*/
+/*top-tokens-table*/
+.top-tokens-table .table-container .thead .tr {
+  background-color: #190929;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px; }
+  .top-tokens-table .table-container .thead .tr .td {
+    color: #756c7e; }
+    .top-tokens-table .table-container .thead .tr .td a {
+      color: #756c7e; }
+.top-tokens-table .table-container .tr {
+  border-bottom: 1px solid #190929; }
+  .top-tokens-table .table-container .tr .td .index {
+    padding-right: 20px; }
+  .top-tokens-table .table-container .tr .td .name {
+    color: #ff3cb1;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 55px; }
+.top-tokens-table .table-container .td-name {
+  flex: 0 0 25%;
+  justify-content: flex-start; }
+  .top-tokens-table .table-container .td-name .image-icon {
+    position: relative; }
+    .top-tokens-table .table-container .td-name .image-icon img {
+      position: absolute;
+      top: -8px; }
+.top-tokens-table .table-container .td-symbol {
+  flex: 0 0 12%;
+  justify-content: flex-end; }
+.top-tokens-table .table-container .td-liquidity,
+.top-tokens-table .table-container .td-volume-24hrs {
+  justify-content: flex-end; }
+.top-tokens-table .table-container .td-price,
+.top-tokens-table .table-container .td-price-change {
+  flex: 0 0 12%;
+  justify-content: flex-end; }
+@media screen and (max-width: 1175px) {
+  .top-tokens-table .table-container {
+    width: 1200px; } }
+@media screen and (max-width: 768px) {
+  .top-tokens-table .table-container {
+    width: XL; } }
+@media screen and (max-width: 1175px) {
+  .top-tokens-table {
+    width: XL;
+    overflow-x: scroll; } }
+
+/*# sourceMappingURL=top-tokens.css.map */

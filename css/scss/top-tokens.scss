@@ -1,0 +1,83 @@
+@import 'common';
+@import 'colors';
+
+/*top-tokens-table*/
+.top-tokens-table {
+    .table-container {
+        .thead {
+            .tr {
+                background-color: $bg-top-table-tr;
+                border-top-left-radius: 17px;
+                border-top-right-radius: 17px;
+
+                .td {
+                    color: $color-top-table-td;
+
+                    a {
+                        color: $color-top-table-td;
+                    }
+                }
+            }
+        }
+
+        .tr {
+            border-bottom: 1px solid $bg-top-table-tr;
+
+            .td {
+                .index {
+                    padding-right: 20px;
+                }
+
+                .name {
+                    color: $color-top-table-td-name;
+                    font-weight: bold;
+                    font-size: 16px;
+                    margin-left: 55px;
+                }
+            }
+        }
+
+        .td-name {
+            flex: 0 0 25%;
+            justify-content: flex-start;
+
+            .image-icon {
+                position: relative;
+
+                img {
+                    position: absolute;
+                    top: -8px;
+                }
+            }
+        }
+
+        .td-symbol {
+            flex: 0 0 12%;
+            justify-content: flex-end;
+        }
+
+        .td-liquidity,
+        .td-volume-24hrs {
+            justify-content: flex-end;
+        }
+
+        .td-price,
+        .td-price-change {
+            flex: 0 0 12%;
+            justify-content: flex-end;
+        }
+
+        @include ScreenMaxWidth(XL) {
+            width: 1200px;
+        }
+
+        @include ScreenMaxWidth(SM) {
+            width: XL;
+        }
+    }
+
+    @include ScreenMaxWidth(XL) {
+        width: XL;
+        overflow-x: scroll;
+    }
+}

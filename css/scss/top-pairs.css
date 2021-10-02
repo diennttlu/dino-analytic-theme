@@ -1,0 +1,48 @@
+/*background-attr*/
+/*color-attr*/
+/*top-pairs-table*/
+.top-pairs-table .table-container .thead .tr {
+  background-color: #190929;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px; }
+  .top-pairs-table .table-container .thead .tr .td {
+    color: #756c7e; }
+    .top-pairs-table .table-container .thead .tr .td a {
+      color: #756c7e; }
+.top-pairs-table .table-container .tr {
+  border-bottom: 1px solid #190929; }
+  .top-pairs-table .table-container .tr .td .index, .top-pairs-table .table-container .tr .td image-icon {
+    padding-right: 15px; }
+  .top-pairs-table .table-container .tr .td .couple-icon .icon-1 {
+    top: -9px; }
+  .top-pairs-table .table-container .tr .td .couple-icon .icon-2 {
+    top: -9px;
+    left: 36px; }
+  .top-pairs-table .table-container .tr .td .name {
+    color: #ff3cb1;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 90px; }
+.top-pairs-table .table-container .td-name {
+  flex: 0 0 25%;
+  justify-content: flex-start; }
+.top-pairs-table .table-container .td-liquidity,
+.top-pairs-table .table-container .td-volume-24hrs {
+  justify-content: flex-end; }
+.top-pairs-table .table-container .td-volume-7d,
+.top-pairs-table .table-container .td-fees,
+.top-pairs-table .table-container .td-fees-liquidity {
+  flex: 0 0 13%;
+  justify-content: flex-end; }
+@media screen and (max-width: 1175px) {
+  .top-pairs-table .table-container {
+    width: 1200px; } }
+@media screen and (max-width: 768px) {
+  .top-pairs-table .table-container {
+    width: XL; } }
+@media screen and (max-width: 1175px) {
+  .top-pairs-table {
+    width: XL;
+    overflow-x: scroll; } }
+
+/*# sourceMappingURL=top-pairs.css.map */
